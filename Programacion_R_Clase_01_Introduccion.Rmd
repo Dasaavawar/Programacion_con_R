@@ -1,0 +1,109 @@
+---
+title: "Introducción a R"
+author: 
+- "jstats1702" 
+- "Web page : https://sites.google.com/view/juansosa/"
+- "YouTube  : https://www.youtube.com/c/JuanSosa1702"
+- "RPubs    : https://rpubs.com/jstats1702"
+- "GitHub   : https://github.com/jstats1702"
+date: ""
+output:
+  html_document:
+    highlight: default
+    number_sections: yes
+    theme: cosmo
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+# '#' se utiliza para escribir 'comentarios'
+
+# 1+1
+
+1+1
+```
+
+```{r}
+# algunos atajos
+# limpiar la consola : Ctrl + L
+# correr codigo      : Ctrl + Enter
+# ir al script       : Ctrl + 1
+# ir a la consala    : Ctrl + 2
+# aumentar zoom      : Ctrl + + 
+# aumentar zoom      : Ctrl + - 
+```
+
+```{r}
+# usar nombres significativos
+# mayusculas y minusculas representan caracteres diferentes
+# es permitido usar puntos '.' y guiones bajos '_'
+# no usar nombres que inicien con numeros
+# no usar nombres reservados: c, t, seq, sum, mean, plot, ...
+# usar '=' o '<-' para definir objetos
+
+x <- 13
+x
+
+yrg = 2.7
+yrg
+```
+
+```{r}
+# concatenar valores
+x <- c(3, 7, 1, 4, 2)
+x
+
+# clase de un objecto
+class(x)
+
+# secuencias
+y <- 1:5
+y
+
+z <- seq(from = 2, to = 10, by = 2)
+z
+
+v <- rep(x = 1, times = 5)
+v
+
+# longitud de un objecto
+length(x)
+
+# algunas operaciones basicas
+x + 2
+
+x^2
+
+sqrt(x)
+
+x + y
+
+y / z
+
+# remover objetos
+rm(x, y, z, v)
+```
+
+```{r}
+# valor en el mercado (en billones de US)
+# https://www.forbes.com/lists/global2000/#7e9e39675ac0
+valor <- c(249.5, 464.8, 624.4, 210.4, 1897.2)
+
+# algunas funciones basicas
+class(valor)
+
+length(valor)
+
+min(valor)
+
+max(valor)
+
+sum(valor)
+
+mean(valor)
+
+sort(valor)
+```
